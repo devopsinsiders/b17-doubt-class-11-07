@@ -4,16 +4,10 @@ module "resource_group" {
   resource_group_location = "centralindia"
 }
 
-module "resource_group2" {
+module "resource_group4" {
   source                  = "../modules/azurerm_resource_group"
-  resource_group_name     = "102-rg-india"
+  resource_group_name     = "rg-todoapp3"
   resource_group_location = "centralindia"
-}
-
-module "resource_group1" {
-  source = "../modules/azurerm_resource_group"
-  resource_group_name = "rg-canada"
-  resource_group_location = "canada central"
 }
 
 module "virtual_network" {
