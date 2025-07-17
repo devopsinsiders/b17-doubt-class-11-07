@@ -10,6 +10,11 @@ module "resource_group4" {
   resource_group_location = "centralindia"
 }
 
+module "rinkia-ke-papa-rg" {
+  source                  = "../modules/azurerm_resource_group"
+  resource_group_name     = "rinkia-ke-papa-rg"
+  resource_group_location = "centralindia"
+}
 module "virtual_network" {
   depends_on = [module.resource_group]
   source     = "../modules/azurerm_virtual_network"
